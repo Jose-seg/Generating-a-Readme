@@ -11,8 +11,12 @@ Given that a user wants to generate a quick professional readme, a series of pro
 information the user provided.
 
 ## Installation
+- Chalk
+- MarkitDown
+- Inquirer
 
 ## Video Link
+https://drive.google.com/file/d/1dCyZHOi5oNJvWeM7DRf521a8vxhLxoNe/view
 
 ## Github Repo
 https://github.com/Jose-seg/Generating-a-Readme
