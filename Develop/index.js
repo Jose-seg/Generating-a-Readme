@@ -54,21 +54,78 @@ const questions = [
   },
 ];
 
-inquirer
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            console.error(chalk.red('Error writing file:', err));
+        } else {
+            console.log(chalk.green('Successfully wrote the README file:', fileName));
+        }
+    })
+}
+
+function generateReadmeData(answers) {
+    return `
+    # ${answers.title}
+    
+    ${answers.description}
+    
+    ## Table of contents
+    
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
+    
+    ## Installation
+    
+    ${answers.installation}
+    
+    ## Usage
+    
+    ${answers.usage}
+    
+    ## License
+    
+    This project is licensed under the ${answers.license} license.
+    
+    ## Contributing
+    
+    ${answers.contributing}
+    
+    ## Tests
+    
+    ${answers.tests}
+    
+    ## Questions
+    
+    For any questions, feel free to contact me:
+    
+    - [Github](${answers.githubUsername})
+    - [Email](${answers.email})
+    `;
+}
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer
    .prompt(questions)
    .then((answers) => {
+// Generate the README content using the user's input
+const readmeData = generateReadmeData(answers);
+
+// Write the README content to a file
+writeToFile('README.md', readmeData);
 // Uses the 'answers' object in order to access the user's input
     console.log(answers);
    })
    .catch((error) => {
     console.error('Seems that an error occurred:', error)
    });
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
+}
 
 // Function call to initialize app
 init();
