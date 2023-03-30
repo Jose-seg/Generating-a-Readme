@@ -4,7 +4,7 @@ import inquirer from 'inquirer';
 import MarkdownIt from 'markdown-it';
 import chalk from 'chalk';
 
-import { renderLicenseBadge, generateMarkdown } from './utils/generateMarkdown.mjs';
+import { renderLicenseBadge, renderLicenseLink, renderLicenseSection, generateMarkdown } from './utils/generateMarkdown.mjs';
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -70,48 +70,48 @@ function writeToFile(fileName, data) {
 function generateReadmeData(answers) {
     const licenseBadge = renderLicenseBadge(answers.license);
     return `
-    ${licenseBadge}
+ ${licenseBadge}
 
-    # ${answers.title}
+# ${answers.title}
     
-    ${answers.description}
+${answers.description}
     
-    ## Table of contents
+## Table of contents
     
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
     
-    ## Installation
+## Installation
     
-    ${answers.installation}
+${answers.installation}
     
-    ## Usage
+## Usage
     
-    ${answers.usage}
+${answers.usage}
     
-    ## License
+ ## License
     
-    This project is licensed under the ${answers.license} license.
+ This project is licensed under the ${answers.license} license.
     
-    ## Contributing
+## Contributing
     
-    ${answers.contributing}
+${answers.contributing}
     
-    ## Tests
+## Tests
     
-    ${answers.tests}
+${answers.tests}
     
-    ## Questions
+## Questions
     
-    For any questions, feel free to contact me:
+For any questions, feel free to contact me:
     
-    - [Github](${answers.githubUsername})
-    - [Email](${answers.email})
-    `;
+- [Github](${answers.githubUsername})
+- [Email](${answers.email})
+  `;
 }
 
 // TODO: Create a function to initialize app

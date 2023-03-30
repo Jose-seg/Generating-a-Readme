@@ -1,43 +1,43 @@
 
-    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+ ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-    # Hello World
+# Boos and Scares
     
-    To make the world smile
+An app to scare your friends with spooky texts
     
-    ## Table of contents
+## Table of contents
     
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
     
-    ## Installation
+## Installation
     
-    to like people
+none
     
-    ## Usage
+## Usage
     
-    to be nice
+generate the spooky texts using our generator
     
-    ## License
+ ## License
     
-    This project is licensed under the MIT license.
+ This project is licensed under the MIT license.
     
-    ## Contributing
+## Contributing
     
-    none
+none
     
-    ## Tests
+## Tests
     
-    none
+none
     
-    ## Questions
+## Questions
     
-    For any questions, feel free to contact me:
+For any questions, feel free to contact me:
     
-    - [Github](nomo)
-    - [Email](jose90@gmail.com)
-    
+- [Github](heeboo)
+- [Email](koic90@gmail.com)
+  
