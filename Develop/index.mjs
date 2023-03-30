@@ -1,8 +1,10 @@
 // TODO: Include packages needed for this application
-const fs = require('fs');
-const inquirer = require('inquirer');
-const MarkdownIt = require('markdown-it');
-const chalk = require('chalk');
+import fs from 'fs/promises';
+import inquirer from 'inquirer';
+import MarkdownIt from 'markdown-it';
+import chalk from 'chalk';
+
+import { renderLicenseBadge, generateMarkdown } from './utils/generateMarkdown.mjs';
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -66,7 +68,10 @@ function writeToFile(fileName, data) {
 }
 
 function generateReadmeData(answers) {
+    const licenseBadge = renderLicenseBadge(answers.license);
     return `
+    ${licenseBadge}
+
     # ${answers.title}
     
     ${answers.description}

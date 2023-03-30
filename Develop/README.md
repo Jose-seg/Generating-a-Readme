@@ -1,7 +1,9 @@
 
-    # Hello Fresh
+    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+    # Hello World
     
-    its purpose is to bring awareness
+    To make the world smile
     
     ## Table of contents
     
@@ -14,11 +16,11 @@
     
     ## Installation
     
-    N/A
+    to like people
     
     ## Usage
     
-    to bring awareness
+    to be nice
     
     ## License
     
@@ -26,16 +28,16 @@
     
     ## Contributing
     
-    to have fun 
+    none
     
     ## Tests
     
-    test all the time
+    none
     
     ## Questions
     
     For any questions, feel free to contact me:
     
-    - [Github](josseg)
-    - [Email](jokic09@gmail.com)
+    - [Github](nomo)
+    - [Email](jose90@gmail.com)
     
